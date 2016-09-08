@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Heidis Code Quiz</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Heidis Code Quiz</title>
 
-<link href="/static/css/bootstrap.css" rel="stylesheet">
-<link href="/static/style.css" rel="stylesheet">
+	<link href="/static/css/bootstrap.css" rel="stylesheet">
+	<link href="/static/style.css" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Cinzel+Decorative|Comfortaa|Kaushan+Script|Lobster|Martel|Permanent+Marker|Rajdhani|Source+Code+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Cinzel+Decorative|Comfortaa|Kaushan+Script|Lobster|Martel|Permanent+Marker|Rajdhani|Source+Code+Pro" rel="stylesheet">
 
 </head>
 <body>
 
-<h1>CoderGirl Quiz!</h1>
+	<h1>CoderGirl Quiz!</h1>
 
-<img src="https://cdn-images-1.medium.com/max/800/1*xrs6xnfotp-01hXBecuuDg.jpeg"/>
+	<img src="https://cdn-images-1.medium.com/max/800/1*xrs6xnfotp-01hXBecuuDg.jpeg"/>
 
-<div class="container">
-	<div class="row">
-	{% for quiz in quizzes %}
-		<div class="col-md-4"><h3>{{ quiz.name}}</h3><p>Quiset handlar om...</p></div>
-	{% endfor %}
-		
-	</div>
-	}
+	<div class="container">
+		<div class="row">
+			{% for quiz in quizzes %}
+			<div class="col-md-4">
+				<h3>{{ quiz.name}}</h3>
+				<p>Quiset handlar om...</p>
+				<p><a href="{% url 'quiz_page' quiz.quiz_number %}">
+				Gå till {{ quiz.name }}
+				</a></p>
+			</div>
+
+			{% endfor %}
+
+		</div>
+
 </div>
 
 </body>
