@@ -16,16 +16,22 @@
 
 	<h1>CoderGirl Quiz!</h1>
 
-	<img src="https://cdn-images-1.medium.com/max/800/1*xrs6xnfotp-01hXBecuuDg.jpeg"/>
+	<br />
+
+	<img class="startimage" src="/static/img/girl.jpg"/>
+
+	<br />
+	<br />
+	<br />
 
 	<div class="container">
 		<div class="row">
 			{% for quiz in quizzes %}
 			<div class="col-md-4">
 				<h3>{{ quiz.name}}</h3>
-				<p>Quiset handlar om...</p>
+				
 				<p><a href="{% url 'quiz_page' quiz.quiz_number %}">
-				Gå till {{ quiz.name }}
+				Gå till quiz
 				</a></p>
 			</div>
 
