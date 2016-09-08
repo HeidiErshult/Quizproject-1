@@ -30,9 +30,23 @@ def quiz(request, quiz_number):
 	}
 	return render(request, "quiz/Quiz.html", context)
 
-def question(request):
-	return render(request, "quiz/Question.html")
-def completed(request):
-	return render(request, "quiz/Results.html")
+def question(request, quiz_number, question_number):
+	context = {
+		"question_number": question_number,
+	    "question": "Hur många bultar har ölandsbron?",
+		"answer1": "12",
+	   	"answer2": "66 400",
+	    "answer3": "7 428 954",
+	    "quiz_number": quiz_number,
+	}
+	return render(request, "quiz/question.html", context)
+
+def results(request, quiz_number):
+	context = {
+	    "correct": 12,
+	    "total": 20,
+		"quiz_number": quiz_number,
+	}
+	return render(request, "quiz/results.html", context)
 
 # Create your views here.

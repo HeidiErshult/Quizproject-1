@@ -13,7 +13,8 @@
 
 </head>
 <body>
-<h4>Vad heter den första kvinnliga kodaren i världen?</h4>
+<h4>{{ question }}</h4>
+
 
 <div class="container">
 	<div class="row">
@@ -22,16 +23,15 @@
 <div class="ruta">
 <legend>DITT SVAR</legend>
 <input type="radio" name="samename" id="fnamn" />
-<label for="fnamn">Lilian Bland</label> 
+<label for="fnamn">{{ answer1 }}</label> 
 <br />
 <input type="radio" name="samename" id="enamn" />
-<label for="enamn">Ada Lovelace</label> 
+<label for="enamn">{{ answer2 }}</label> 
 <br />
 <input type="radio" name="samename" id="epost" />
-<label for="epost">Estrid Ericson</label> 
+<label for="epost">{{ answer3 }}</label> 
 <br />
-<input type="radio" name="samename" id="epost" />
-<label for="epost">Florence Nightingalen</label> 
+
 </div>
 <br />
 <br />
