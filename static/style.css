@@ -1,0 +1,38 @@
+body{text-align: center;
+background: #FFFFFF}
+h1{
+	color: #050505;
+	font-weight: bold;
+	font-size: 95px;
+	font-family: Lobster;
+}
+p {
+	font-family: Lobster;
+	font-size: 20px;
+}
+h2{
+color: #050505;
+	font-weight: bold;
+	font-size: 75px;
+	font-family: Lobster;
+}
+h3{
+	color: #050505;
+	font-weight: bold;
+	font-size: 50px;
+	font-family: Lobster;
+	}
+h4{
+	color: #050505;
+	font-weight: bold;
+	font-size: 50px;
+	font-family: Lobster;
+}
+.ruta{
+	text-align: left;
+	width: 200px;
+	margin: 0 auto;
+	body{text-align: center;
+background: #D9D5CC}
+
+}
