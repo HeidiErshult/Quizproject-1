@@ -39,3 +39,21 @@ h4{
 }
 .completepicture{
 	width: 500px;
+
+}
+
+.button {
+    background-color: #BA55D3;
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button:hover {
+background-color: #DA70D6;
+color: white;
+text-decoration: none;
+}

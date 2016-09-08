@@ -17,12 +17,20 @@
 <h1>{{ quiz.name }}</h1>
 
 	<p>{{ quiz.description }}</p>
-	<br>
+	
+
+	<a class="button" type="button" href="{% url 'quiz_page' quiz.quiz_number %}">Gå till Quiz</a>
+				
+			</div>
+
+
+</body>
+</html>
 
 </form>
 <a href="https://sv.wikipedia.org/wiki/Ada_Lovelace">
 <br>
-<p><a href="{% url 'question_page' quiz_number 1 %}">Starta quiz</a></p>
+
 <br />
 <img class="quizimage" src="/static/img/lightbulb.jpg"/>
 
