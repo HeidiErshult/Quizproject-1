@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from quiz.models import Quiz
+
 quizzes = [
 	{
 		"quiz_number": 1,
@@ -20,7 +22,7 @@ quizzes = [
 
 def startpage(request):
 	context = {
-		"quizzes": quizzes,
+		"quizzes": Quiz.objects.all(),
 	}
 	return render(request, "quiz/startsida.html", context)
 def quiz(request, quiz_number):
