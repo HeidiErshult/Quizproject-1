@@ -26,7 +26,7 @@ def startpage(request):
 	context = {
 		"quizzes": Quiz.objects.all(),
 	}
-	return render(request, "quiz/startsida.html", context)
+	return render(request, "quiz/Startsida.html", context)
 def quiz(request, quiz_number):
 	context = {
 		"quiz": Quiz.objects.get(quiz_number=quiz_number),
@@ -47,7 +47,7 @@ def question(request, quiz_number, question_number):
 			"quiz": quiz,
 			"quiz_number": quiz_number,
 	}
-	return render(request, "quiz/question.html", context)
+	return render(request, "quiz/Question.html", context)
 
 def answer(request, quiz_number, question_number):
 	saved_answers = request.session.get(quiz_number, {})
@@ -79,6 +79,6 @@ def results(request, quiz_number):
 	    	"correct": num_correct_answers,
     		"total": questions.count(),
 }
-	return render(request, "quiz/results.html", context)
+	return render(request, "quiz/Results.html", context)
 
 # Create your views here.
