@@ -29,14 +29,12 @@
 <input type="radio" name="answer" value="1">{{ answer1 }}
 
 <br />
-<input type="radio" name="answer" value="1">{{ answer2 }}
+<input type="radio" name="answer" value="2">{{ answer2 }}
 
 <br />
-<input type="radio" name="answer" value="1">{{ answer3 }}
+<input type="radio" name="answer" value="3">{{ answer3 }}
 
 
-
-</form>
 </div>
 
 </div>
@@ -46,7 +44,9 @@
 <br />
 <br />
 
-<a class="button" type="button" href="{% url 'results_page' quiz_number %}">Nästa</a>
+<button class="button" type="submit">Nästa</button>
+
+</form>
 
 
 </body>
