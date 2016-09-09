@@ -21,6 +21,11 @@
 
 <div class="ruta">
 <legend>Ditt svar</legend>
+<form
+ action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+
+ {% csrf_token %}
+
 <input type="radio" name="samename" id="fnamn" />
 <label for="fnamn">{{ answer1 }}</label> 
 <br />
@@ -29,7 +34,7 @@
 <br />
 <input type="radio" name="samename" id="epost" />
 <label for="epost">{{ answer3 }}</label> 
-
+</form>
 </div>
 
 </div>
